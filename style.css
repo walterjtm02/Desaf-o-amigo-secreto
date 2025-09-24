@@ -1,0 +1,176 @@
+:root {
+    --color-primary: #4B69FD;
+    --color-secondary: #FFF9EB;
+    --color-tertiary: #DCDCDC; 
+    --color-button: #fe652b;
+    --color-button-hover: #e55720;
+    --color-text: #444444;
+    --color-white: #FFFFFF;
+    --color-success: #2E7D32;
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Banner */
+.header-banner {
+    flex: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 20px 0;
+}
+
+.header-banner img {
+    max-width: 150px;
+}
+
+/* Sección de entrada */
+.input-section {
+    flex: 60%;
+    background-color: var(--color-secondary);
+    border: none;
+    border-radius: 64px 64px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    width: 100%;
+}
+
+/* Títulos */
+.main-title {
+    font-size: 48px;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--color-white);
+}
+
+.section-title {
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--color-primary);
+    margin-bottom: 30px;
+}
+
+/* Contenedor de entrada */
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.input-name {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid var(--color-tertiary);
+    border-right: none;
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+}
+
+/* Botones */
+button {
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+.button-add {
+    padding: 15px 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    border: 1px solid var(--color-tertiary);
+    border-left: none;
+    border-radius: 0 25px 25px 0;
+    background-color: var(--color-tertiary);
+    color: var(--color-text);
+}
+
+.button-add:hover {
+    background-color: #c4c4c4;
+}
+
+/* Listas */
+#listaAmigos {
+    list-style-type: none;
+    color: var(--color-primary);
+    font-size: 18px;
+    margin-top: 25px;
+    font-weight: 500;
+    text-align: center;
+    padding: 0;
+}
+
+#resultado {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 25px;
+    color: var(--color-success);
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    min-height: 28px;
+}
+
+/* Contenedor del botón principal */
+.button-container {
+    width: 100%;
+    max-width: 350px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.button-draw {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
+    color: var(--color-white);
+    background-color: var(--color-button);
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #000;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-draw img {
+    margin-right: 15px;
+}
+
+.button-draw:hover {
+    background-color: var(--color-button-hover);
+}
+
