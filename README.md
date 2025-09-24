@@ -1,4 +1,5 @@
 Proyecto: Sorteo de Amigo Secreto
+
 Este proyecto es una aplicación web simple e interactiva desarrollada como parte de un desafío de lógica de programación. Permite a los usuarios crear una lista de participantes y realizar un sorteo para determinar quién es el "amigo secreto" de manera aleatoria.
 
 📜 Descripción
